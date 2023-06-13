@@ -1,0 +1,17 @@
+<div class="search-box-form">
+  <input
+    type="text"
+    class="search-box-field-input"
+    ngModel name="search"
+    #search="ngModel"
+    id="search"
+    placeholder="Search"
+    required
+    (keyup.enter)="searchVideos(txtSearch.value)"
+    #txtSearch
+  />
+
+  <button class="search-box-button">
+    <mat-icon class="mat-icon">search</mat-icon>
+  </button>
+</div>

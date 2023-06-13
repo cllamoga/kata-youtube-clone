@@ -1,0 +1,150 @@
+.card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  max-width: 360px;
+  position: relative;
+  flex-direction: column;
+
+}
+
+.card-video {
+  width: 100%;
+  /* height: calc(100% - 90px); */
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.card-video-image {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  min-height: 1px;
+  min-width: 1px;
+  visibility: inherit;
+  object-fit: cover;
+  border-radius: 4%;
+}
+
+.card-video-duration {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  background: #000;
+  color: #fff;
+  padding: 3px 4px;
+  border-radius: 100%;
+  font-size: 0.8rem;
+}
+
+.card-details {
+  padding-top: 4px;
+  height: 100%;
+  display: flex;
+}
+
+.card-details-avatar {
+  height: 36px;
+  margin-top: 12px;
+  margin-right: 12px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.card-details-avatar-channel {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  transition: none;
+}
+
+
+.card-details-icon-channel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: none;
+  max-width: 100%;
+  border-radius: none;
+}
+
+.card-details-text {
+  overflow-x: hidden;
+}
+
+.card-details-text-title {
+  color: black;
+  margin: 4px 4px 2px 0;
+}
+
+.card-details-text-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2.0rem;
+  font-weight: 500;
+  overflow: hidden;
+  max-height: 4.4rem;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.card-details-channel {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-details-channel-name {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-details-channel-stats {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  overflow: hidden;
+  display: block;
+  max-height: 4rem;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-details-channel-stats-text {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  white-space: normal;
+}

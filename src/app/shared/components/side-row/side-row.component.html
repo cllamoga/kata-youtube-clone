@@ -1,0 +1,10 @@
+<a *ngIf="sideRow.option" class="side-bar-link" href="#">
+  <mat-icon class="mat-icon"> {{sideRow.icon}} </mat-icon>
+  <span class="side-bar-text">
+    {{ sideRow.text || '' }}
+  </span>
+</a>
+
+<div *ngIf="!sideRow.option">
+  <hr />
+</div>

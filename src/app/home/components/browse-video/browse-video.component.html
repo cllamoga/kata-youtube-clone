@@ -1,0 +1,69 @@
+<!-- <div class="card"> -->
+  <div class="card">
+    <div class="card-video" (click)="openLink(video.id)">
+      <img
+        _ngcontent-serverapp-c102=""
+        alt="Video image"
+        ng-reflect-ng-src="https://i.ytimg.com/vi/AthdYMV"
+        ng-reflect-fill="true" ng-reflect-priority="false" loading="lazy" fetchpriority="auto"
+        src={{video.snippet.thumbnails.high.url}}
+        sizes="100vw"
+        class="ng-star-inserted card-video-image"
+      >
+      <div class="card-video-duration">{{video.contentDetails.duration | ytDuration}}</div>
+    </div>
+
+    <div class="card-details">
+      <a
+        id="avatar-link"
+        class="card-details-avatar"
+        tabindex="-1"
+        title={{video.snippet.channelTitle}}
+        href="/@"
+        >
+
+          <div
+          id="avatar"
+          width="48"
+          class="card-details-avatar-channel"
+          loaded="">
+
+            <img id="img"
+            draggable="false"
+            class="card-details-icon-channel"
+            alt=""
+            width="48"
+            src={{video.icon}}>
+
+        </div>
+
+      </a>
+
+      <div class="card-details-text">
+        <h3 class="card-details-text-title">
+          <a class="card-details-text-link">
+            {{video.snippet.title}}
+          </a>
+        </h3>
+
+        <div class="card-details-channel">
+          <div class="card-details-channel-name">
+            <a>
+              {{video.snippet.channelTitle}}
+            </a>
+          </div>
+
+          <div class="card-details-channel-stats">
+            <span class="card-details-channel-stats-text">
+              {{video.statistics.viewCount | ytViewCount}}
+            </span>
+            &nbsp;
+            <span class="card-details-channel-stats-text">
+               {{video.snippet.publishedAt | ytPublished}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>

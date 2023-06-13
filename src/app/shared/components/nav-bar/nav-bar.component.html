@@ -1,0 +1,17 @@
+<div class="navbar-menu">
+  <div class="navbar-menu-icon">
+    <mat-icon class="mat-icon">menu</mat-icon>
+  </div>
+  <img [routerLink]="['/']" class="navbar-menu-ytlogo" src="assets/logo.svg" height="20" width="90" alt="youtube logo" />
+</div>
+
+<div class="navbar-search">
+  <shared-search-box></shared-search-box>
+  <mat-icon class="navbar-mic mat-icon">mic</mat-icon>
+</div>
+
+<div class="navbar-options">
+  <mat-icon class="mat-icon" [matTooltip]="'Create'" [matTooltipPosition]="'below'">video_call</mat-icon>
+  <mat-icon class="mat-icon" [matTooltip]="'Notifications'" [matTooltipPosition]="'below'">notifications</mat-icon>
+  <mat-icon class="mat-icon" [matTooltip]="'Account'" [matTooltipPosition]="'below'">account_circle</mat-icon>
+</div>

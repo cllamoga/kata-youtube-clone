@@ -1,0 +1,33 @@
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu-icon {
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+.navbar-menu-ytlogo {
+  line-height: unset;
+  cursor: pointer;
+}
+
+.navbar-search {
+  display: flex;
+}
+
+.navbar-mic{
+  margin-top: 10px;
+}
+
+.navbar-options {
+  display: flex;
+}
+
+.mat-icon {
+  color: rgb(100, 100, 100);
+  padding: 0 7px;
+  cursor: pointer;
+  width: auto;
+}

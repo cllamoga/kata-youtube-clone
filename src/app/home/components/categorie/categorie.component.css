@@ -1,0 +1,17 @@
+.categories-options{
+  background: #f0f0f0;
+  border-radius: 50px;
+  border: 1px solid #dbdbdb;
+  color: #242424;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+
+.categories-options.active{
+  background: #242424;
+  color: #fff;
+}
